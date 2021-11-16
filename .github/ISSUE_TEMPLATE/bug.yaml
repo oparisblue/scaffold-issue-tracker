@@ -6,7 +6,14 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: Thanks for reporting the issue!
+      value: Thanks for reporting this issue!
+  - type: input
+    id: version
+    attributes:
+      label: What Scaffold version are you using?
+      description: You can find this under <insert instructions>
+    validations:
+      required: true
   - type: dropdown
     id: area
     attributes:
@@ -26,7 +33,7 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: area
+    id: type
     attributes:
       label: What type of issue is this?
       options:
