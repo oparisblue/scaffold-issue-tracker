@@ -64,7 +64,7 @@ body:
     attributes:
       label: What did you expect to happen?
   - type: textarea
-    id: description
+    id: steps
     attributes:
       label: What are the steps to reproduce the bug?
     validations:
