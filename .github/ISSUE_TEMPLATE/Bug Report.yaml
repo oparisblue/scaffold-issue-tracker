@@ -1,0 +1,72 @@
+name: 🐞 Bug Report
+description: Noticed something that doesn't work right?
+labels: ["bug", "triage"]
+assignees:
+  - oparisblue
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting the issue!
+  - type: dropdown
+    id: area
+    attributes:
+      label: In which area are you seeing the issue?
+      options:
+        - Device Drivers
+        - File Systems
+        - File Parsing / Loading
+        - Font Rendering
+        - General Rendering
+        - Hex Editor
+        - Opening / Closing Apps
+        - Text Entry
+        - Transom Compiler
+        - UI Components
+        - Other (please note where in your report)
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: What type of issue is this?
+      options:
+        - Incorrect / Unexpected Behaviour
+        - Application Crash
+        - Application Lag / Unresponsiveness
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: What was the impact of the bug?
+      options:
+        - I lost work
+        - It prevented me from doing what I was trying to do
+        - I was able to continue working, but was greatly impeded
+        - It was annoying, but had no major impact on my work
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expectation
+    attributes:
+      label: What did you expect to happen?
+  - type: textarea
+    id: description
+    attributes:
+      label: What are the steps to reproduce the bug?
+    validations:
+      required: true
+  - type: textarea
+    id: trace
+    attributes:
+      label: Stack Trace (if given)
+  - type: textarea
+    id: comments
+    attributes:
+      label: Anything else you'd like to add?
