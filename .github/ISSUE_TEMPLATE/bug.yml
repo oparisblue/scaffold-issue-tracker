@@ -1,6 +1,6 @@
 name: 🐞 Bug Report
 description: Noticed something that doesn't work right?
-labels: ["bug", "triage"]
+labels: ["bug"]
 assignees:
   - oparisblue
 body:
@@ -19,7 +19,9 @@ body:
     attributes:
       label: In which area are you seeing the issue?
       options:
+        - Accounts
         - Device Drivers
+        - Desktop Environment / System
         - File Systems
         - File Parsing / Loading
         - Font Rendering
@@ -42,17 +44,20 @@ body:
         - Application Lag / Unresponsiveness
     validations:
       required: true
-  - type: dropdown
+  - type: checkboxes
     id: impact
     attributes:
       label: What was the impact of the bug?
       options:
-        - I lost work
-        - It prevented me from doing what I was trying to do
-        - I was able to continue working, but was greatly impeded
-        - It was annoying, but had no major impact on my work
+        - I lost what I was currently working on (unsaved changes, etc)
+        - I lost files that I had previously saved, or that exist somewhere else on my mounted drive
+        - I was not able to complete my overall goal
+        - Scaffold was left in an unusable / invalid state
+        - Scaffold was left in an unusable / invalid state, _even after I reloaded_
+        - It allowed me to do something I shouldn't be able to do
+        - It has security implications
     validations:
-      required: true
+      required: false
   - type: textarea
     id: description
     attributes:
