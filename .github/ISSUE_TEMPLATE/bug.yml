@@ -1,6 +1,6 @@
 name: 🐞 Bug Report
 description: Noticed something that doesn't work right?
-labels: ["bug"]
+labels: ["Bug"]
 assignees:
   - oparisblue
 body:
