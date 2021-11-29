@@ -49,13 +49,13 @@ body:
     attributes:
       label: What was the impact of the bug?
       options:
-        - I lost what I was currently working on (unsaved changes, etc)
-        - I lost files that I had previously saved, or that exist somewhere else on my mounted drive
-        - I was not able to complete my overall goal
-        - Scaffold was left in an unusable / invalid state
-        - Scaffold was left in an unusable / invalid state, _even after I reloaded_
-        - It allowed me to do something I shouldn't be able to do
-        - It has security implications
+        - label: I lost what I was currently working on (unsaved changes, etc)
+        - label: I lost files that I had previously saved, or that exist somewhere else on my mounted drive
+        - label: I was not able to complete my overall goal
+        - label: Scaffold was left in an unusable / invalid state
+        - label: Scaffold was left in an unusable / invalid state, _even after I reloaded_
+        - label: It allowed me to do something I shouldn't be able to do
+        - label: It has security implications
     validations:
       required: false
   - type: textarea
